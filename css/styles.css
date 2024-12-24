@@ -4,6 +4,7 @@
     --color-accent: #ff3400;
     --color-headings: #1b0760;
     --color-body: #918ca4;
+    --color-border: #ccc;
 }
 *,*::after, *::before {
     box-sizing: border-box;
@@ -200,7 +201,7 @@ i {
 /*input*/
 .input {
     padding: 1.5rem 3.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-border);
     border-radius: 30px;
     outline: 0;
     color: var(--color-headings);
@@ -208,6 +209,19 @@ i {
 }
 ::placeholder {
     color: #cdcbd7;
+}
+.input-grp {
+    border: 1px solid var(--color-border);
+    border-radius: 30px;
+    display: flex;
+} 
+.input-grp .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+}
+.input-grp .btn {
+    margin: 4px;
 }
 @media screen and (min-width: 1024px) {
     .input {
