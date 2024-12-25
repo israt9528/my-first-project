@@ -142,6 +142,13 @@ i {
 .icon--primary {
     fill: var(--color-primary);
 }
+.icon--small {
+    width: 30px;
+    height: 30px;
+}
+.icon--white {
+    fill: #fff;
+}
 .icon-container {
     background: #f3f9fa;
     display: inline-flex;
@@ -150,6 +157,10 @@ i {
     border-radius: 100%;
     justify-content: center;
     align-items: center;
+}
+.icon-container--accent {
+    background: var(--color-accent);
+
 }
 /*button*/
 .btn {
@@ -306,10 +317,12 @@ i {
     display: flex;
 }
 
- .media__image {
+ .media .media__image {
     content: url(../images/snap.svg);
     width: 35px;
+    position: relativ;
     margin-bottom: 6rem;
+    bottom: 60px;
 }
 .media__tittle {
     margin-top: 1rem;
@@ -358,4 +371,44 @@ i {
         font-size: 1.6rem;
     }
     
+}
+/*grides*/
+.grid {
+    display: grid;
+}
+@media screen and (min-width: 768px){
+    .grid--1x2 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .grid--1x3 {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+/*test*/
+.test {
+    padding: 3rem;
+    
+}
+.test__image {
+    position: relative;
+
+}
+.test__image > img {
+    width: 100%;
+}
+.test__image > .icon-container {
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+}
+@media screen and (min-width: 768px) {
+    .test .quote,
+    .test .quote__auther {
+        font-size: 2.4rem;
+    }
+    .test .quote {
+        margin-left: 6rem;
+    }
 }
