@@ -299,4 +299,20 @@ i {
     .plan__description {
         font-size: 1.7rem;
     }
+} 
+/*media*/
+.media {
+    display: flex;
+}
+
+.media .media__image {
+    content: url(../images/snap.svg);
+    width: 35px;
+    margin-bottom: 6rem;
+}
+.media__tittle {
+    margin-top: 1rem;
+}
+.media__body {
+    margin: 0 2rem;
 }
