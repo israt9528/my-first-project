@@ -18,26 +18,24 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <section class="block container">
-      <header class="block__header">
-        <h2 class="block__heading">heading</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          dolores illum dignissimos harum dicta blanditiis voluptates atque
-          nulla cupiditate unde.
-        </p>
-      </header>
-    </section>
-    <section class="block block--dark block--skewed-left">
-      <div class="container">
-        <h2 class="block__heading">heading</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          dolores illum dignissimos harum dicta blanditiis voluptates atque
-          nulla cupiditate unde.
-        </p>
-      </div>
-    </section>
+    <nav class="nav collapsible">
+      <a class="nav__brand" href="/"
+        ><img
+          class="nav__img"
+          src="images/font-awesome-thin.svg"
+          alt=""
+        />moshify</a
+      >
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#bars-solid"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">VPS</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
     <script src="js/main.js"></script>
   </body>
 </html>
