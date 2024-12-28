@@ -18,24 +18,26 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <nav class="nav collapsible">
-      <a class="nav__brand" href="/"
-        ><img
-          class="nav__img"
-          src="images/font-awesome-thin.svg"
-          alt=""
-        />moshify</a
-      >
-      <svg class="icon icon--white nav__toggler">
-        <use xlink:href="images/sprite.svg#bars-solid"></use>
-      </svg>
-      <ul class="list nav__list collapsible__content">
-        <li class="nav__item"><a href="#">Hosting</a></li>
-        <li class="nav__item"><a href="#">VPS</a></li>
-        <li class="nav__item"><a href="#">Domain</a></li>
-        <li class="nav__item"><a href="#">Pricing</a></li>
-      </ul>
-    </nav>
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Cloud Hosting for Pros</h1>
+          <p class="hero__tagline">
+            Deplot your websites in less than 60 seconds.
+          </p>
+          <a href="#" class="btn btn--accent btn--strached">Get Started</a>
+        </header>
+        <picture>
+          <source
+            type="images/webp"
+            srcset="images/sayma.webp 1x, images/sayma@2X.webp 2X" />
+          <source
+            type="images/png"
+            srcset="images/sayma.png 1x, images/sayma@2X.png 2X" />
+          <img class="hero__image" src="images/sayma@2x.webp" alt=""
+        /></picture>
+      </div>
+    </section>
     <script src="js/main.js"></script>
   </body>
 </html>
