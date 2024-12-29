@@ -176,6 +176,12 @@ i {
     text-transform: uppercase;
     white-space: nowrap;
 }
+.btn .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
 .btn--stretched {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -204,7 +210,8 @@ i {
 .btn--block {
     width: 100%;
     display: inline-block;
-} .btn--outline  {
+} 
+.btn--outline  {
     background: #fff;
     color: var(--color-headings);
     border: 2px solid var(--color-headings);
@@ -238,7 +245,7 @@ i {
 .input-grp .input {
     border: 0;
     flex-grow: 1;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
 }
 .input-grp .btn {
     margin: 4px;
@@ -265,8 +272,15 @@ i {
     background: var(--color-secondary);
     color: #fff;
 }
+.card--primary .badge--primary {
+    background: #126de4;
+}
 .card--secondary .badge--secondary {
     background: #02cdf1;
+}
+/*plans*/
+.plan {
+    transition: .2s ease-out;
 }
 .plan__name {
     color: #fff;
@@ -292,6 +306,9 @@ i {
 .plan .list__item {
     margin-bottom: 1rem;
 } 
+.plan--popular {
+    transform: scale(1.1);
+}
 .plan--popular .card__header {
     position: relative;
 }
@@ -302,6 +319,12 @@ i {
     position: absolute;
     top: -5px;
     right: 8%;
+} 
+.plan:hover {
+    transform: scale(1.05);
+}
+.plan--popular:hover {
+    transform: scale(1.15);
 }
 @media screen and (min-width: 1024px) {
     .plan__name{
@@ -587,4 +610,53 @@ i {
         align-self: center;
     }
     
+}
+/*domain block*/
+.block-domain .input-grp {
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    margin: 4rem auto;
+    max-width: 670px;
+}
+.block-domain__prices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    font-size: 2rem;
+    font-weight: 600;
+    justify-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+    .block-domain__prices {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+}
+/*block plans*/
+.block-plans .grid {
+    gap: 8rem 4rem;
+}
+.block-plans .card {
+    max-width: 500px;
+    margin: 0 auto;
+}
+/*features*/
+.feature {
+    gap: 4rem 2rem;
+    
+}
+.block__header {
+    margin-bottom: 6rem;
+}
+.feature__heading {
+    margin: 1rem 0;
+}
+.feature__image {
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .feature .feature__content-2 {
+        order: 2;
+    }
 }
