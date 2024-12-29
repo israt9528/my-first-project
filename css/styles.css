@@ -423,7 +423,7 @@ i {
 }
 /*test*/
 .test {
-    padding: 3rem;
+    padding: 3rem 6rem;
     
 }
 .test__image {
@@ -432,6 +432,7 @@ i {
 }
 .test__image > img {
     width: 100%;
+    
 }
 .test__image > .icon-container {
     position: absolute;
@@ -514,6 +515,7 @@ i {
 }
 .block__header {
     text-align: center;
+    margin-bottom: 4rem;
 }
 .block__heading {
     margin-top: 0;

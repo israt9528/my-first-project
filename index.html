@@ -18,67 +18,50 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <section class="block block--dark block--skewed-right block-showcase">
+    <section class="block">
       <header class="block__header">
-        <h2>User-friendly Control Panel</h2>
+        <h2>What our Customers are Saying</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iusto
+          vero adipisci eveniet eos illo.
+        </p>
       </header>
-      <div class="container grid grid--1x2 showcase__content">
-        <picture class="block-showcase__image">
-          <source type="images/webp" srcset="images/sky.webp 1x, images/sky@2x.webp 2x">
-          <source type="images/jpg" srcset="images/sky.jpg 1x, images/sky@2x.jpg 2x">
-          <img src="images/sky.jpg" alt="" /></picture>
-          <picture>
-        <ul class="list">
-          <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#wordpress-brands-solid"></use>
+      <div class="container">
+        <div class="card test">
+          <div class="grid grid--1x2">
+            <div class="test__image">
+              <img src="images/sayma.png" alt="Its me and myself" />
+              <snap class="icon-container icon-container--accent">
+                <svg class="icon icon--white icon--small">
+                  <use xlink:href="images/sprite.svg#quote-right-solid"></use>
                 </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__tittle">Easy Start & Managed Updates</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-                  accusamus facere tenetur quibusdam doloremque, praesentium fugit placeat
-                  deserunt facilis explicabo dignissimos excepturi obcaecati odit ducimus!
-                </p>
-              </div>
+              </snap>
             </div>
-          </li>
-          <li> <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#arrow-up-right-dots-solid"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__tittle">Staging, GIT & WP-CLI</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-                  accusamus facere tenetur quibusdam doloremque, praesentium fugit placeat
-                  deserunt facilis explicabo dignissimos excepturi obcaecati odit ducimus!
-                </p>
-              </div>
-            </div></li>
-          <li> <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#wordpress-brands-solid"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__tittle">Dynamic Caching & More</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-                  accusamus facere tenetur quibusdam doloremque, praesentium fugit placeat
-                  deserunt facilis explicabo dignissimos excepturi obcaecati odit ducimus!
-                </p>
-              </div>
-            </div></li>
-        </ul>
+            <blockquote class="quote">
+              <p class="quote__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis inventore modi laudantium consequatur consectetur
+                nihil, minima repellat rem molestias architecto doloribus quo
+                recusandae enim obcaecati.
+              </p>
+              <footer>
+                <div class="media">
+                  <div class="media__img">
+                    <svg class="icon icon--primary quote__line">
+                      <use
+                        xlink:href="images/sprite.svg#line-brands-solid"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__tittle quote__auther">Israt Jahan</h3>
+                    <p class="quote__company">ABC Company</p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
       </div>
     </section>
     <script src="js/main.js"></script>
